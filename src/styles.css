@@ -1,0 +1,92 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: radial-gradient(ellipse at center, #09458e 0%, #000000 35%);
+    animation: growShrink 12s infinite ease-in-out;
+    color: #b4b4b4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app {
+    width: 100%;
+    max-width: 650px;
+}
+
+.navbar{
+    padding-left: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    color: #ccc;
+}
+
+.navbar a {
+    color: #d0d0d0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.hero {
+    text-align: left;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero p {
+    letter-spacing: 0.5px;
+    color: #d0d0d0;
+}
+
+
+.footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.footer .links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #d0d0d0;
+}
+
+.footer a:hover {
+    transition: 0.5s;
+    color: white;
+}
+.footer p {
+    margin-top: 1.5rem;
+}
+@keyframes growShrink {
+    0% {
+        background-size: 80% 80%;
+    }
+
+    50% {
+        background-size: 105% 110%;
+    }
+
+    100% {
+        background-size: 80% 80%;
+    }
+}
