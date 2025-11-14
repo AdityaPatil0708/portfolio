@@ -1,21 +1,49 @@
 body {
-    font-family: "Inter", sans-serif;
-    background: radial-gradient(ellipse at center, #09458e 0%, #000000 35%);
-    animation: growShrink 12s infinite ease-in-out;
+    font-family: "Poppins", sans-serif;
+
+    background: #000;
+
+    position: relative;
     color: #b4b4b4;
     min-height: 100vh;
+    margin: 0;
+
+
+    overflow-x: hidden;
+    z-index: 0;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.app {
-    width: 100%;
-    max-width: 650px;
+
+body::before {
+    content: "";
+    position: fixed;
+
+    inset: 0;
+
+    background: radial-gradient(ellipse 78% 88% at center,
+            #443da3 0%,
+            #000000 32%);
+
+    transform: scale(1);
+    transform-origin: center;
+    animation: smoothBreath 5s ease-in-out infinite;
+
+    z-index: -1;
 }
 
-.navbar{
+
+
+.app {
+    width: 100%;
+    max-width: 590px;
+}
+
+.navbar {
     padding-left: 1rem;
 }
 
@@ -35,7 +63,7 @@ body {
 }
 
 .navbar a:hover {
-    color: white;
+    color: 443da3;
 }
 
 .hero {
@@ -44,27 +72,36 @@ body {
 }
 
 .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
+    padding-bottom: 1rem;
 }
 
 .hero p {
-    letter-spacing: 0.5px;
+    padding-top: 0.5rem;
+    letter-spacing: 0.1px;
     color: #d0d0d0;
+    font-size: 1rem;
 }
 
 
 .footer {
     font-size: 0.9rem;
-    padding: 1rem;
-}
-
-.footer .links {
-    display: flex;
+    padding: 0.5rem;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
-
+.footer .links {
+    gap: 2.5rem;
+}
+.footer button{
+    background: none;
+    border-radius: 15px;
+}
+.footer button:hover{
+    border: none;
+    transition: 0.8s;
+    background-color: #443da3;
+}
 .footer a {
     text-decoration: none;
     color: #d0d0d0;
@@ -74,19 +111,20 @@ body {
     transition: 0.5s;
     color: white;
 }
+
 .footer p {
     margin-top: 1.5rem;
 }
-@keyframes growShrink {
-    0% {
-        background-size: 80% 80%;
+
+@keyframes smoothBreath {
+
+    0%,
+    100% {
+        transform: scale(1);
     }
 
     50% {
-        background-size: 105% 110%;
-    }
+        transform: scale(1.2);
 
-    100% {
-        background-size: 80% 80%;
     }
 }
