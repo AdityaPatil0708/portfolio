@@ -1,13 +1,12 @@
 body {
     font-family: "Poppins", sans-serif;
 
-    background: #000;
-
+    background: #000000;
+    margin: 0;
     position: relative;
     color: #b4b4b4;
     min-height: 100vh;
-    margin: 0;
-
+    
 
     overflow-x: hidden;
     z-index: 0;
@@ -28,18 +27,17 @@ body::before {
     background: radial-gradient(ellipse 78% 88% at center,
             #443da3 0%,
             #000000 32%);
+
     transform: scale(1);
     transform-origin: center;
     animation: smoothBreath 5s ease-in-out infinite;
 
     z-index: -1;
 }
-
-.app {
+.app{
     width: 590px;
     padding: 1rem;
 }
-
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -59,59 +57,70 @@ body::before {
     color: #443da3;
 }
 
-.hero {
-    text-align: left;
-    padding-top: 1rem;
+.hero2 .title h1{
+    text-align: center;
+}
+.hero2 .project1 {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+
 
 }
+.hero2 .project2 {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 
-.hero h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    padding-bottom: 1rem;
-}
 
-.hero p {
-    padding-top: 0.5rem;
-    letter-spacing: 0.1px;
-    color: #d0d0d0;
-    font-size: 0.95rem;
 }
+.hero2 .project3 {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 
-.footer {
-    font-size: 0.9rem;
-    margin-top: 35px;
-    gap: 2rem;
+
 }
-.footer .links {
-    gap: 2.5rem;
+.hero2 .project1-title{
+    display: flex;
+    justify-content: space-between;
 }
-.footer .links .git button{
+.hero2 .project2-title{
+    display: flex;
+    justify-content: space-between;
+}
+.hero2 .project3-title{
+    display: flex;
+    justify-content: space-between;
+}
+.hero2 button{
     background: none;
-    border-radius: 15px;
-}
-.footer .links .git button:hover{
-    transition: 0.5s;
-}
-.footer .links .linkedin button:hover{
-    transition: 0.5s;
-}
-.footer .links .linkedin button{
-    background: none;
-    border-radius: 15px;
-}
+    border-radius: 12px;
+    height: fit-content;
+    margin-top: 18px;
+    padding: 5px 10px;
 
-.footer a{
-    color: #d0d0d0;
 }
-.footer a:hover{
-    color: #d0d0d0;
+.hero2 button:hover{
+    background-color: white;
     border: none;
+
 }
 
-.footer p {
-    margin-top: 1.5rem;
+.fa-github{
+    font-size: 24px;
+    color: #ffffff;
+}
+.fa-github:hover{
+    color: #443da3;
+
+}    
+.copyright p{
     font-size: 0.8rem;
+
 }
 
 @keyframes smoothBreath {

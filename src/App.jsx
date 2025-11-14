@@ -1,18 +1,15 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+
+import { Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
 import "./styles.css";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <main className="content">
-        <Hero />
-      </main>
-      <Footer />
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Landing />}/>
+      <Route path="/projects" element={<Projects/>}/>
+    </Routes>
+  )
 }
-
 export default App;
