@@ -2,7 +2,7 @@ export default function Hero2() {
     return (
         <section className="hero2">
             <div className="title">
-                <h1>Projects</h1>
+                <h2>Projects</h2>
             </div>
             <div className="project1">
                 <div className="project1-title">
@@ -32,9 +32,6 @@ export default function Hero2() {
                 </div>
             </div>
             <br />
-            <div className="copyright">
-                <p>© 2025 Aditya Patil</p>
-            </div>
         </section>
         
     );

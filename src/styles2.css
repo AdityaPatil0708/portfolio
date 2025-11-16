@@ -1,12 +1,10 @@
 body {
     font-family: "Poppins", sans-serif;
-
-    background: #000000;
     margin: 0;
     position: relative;
     color: #b4b4b4;
     min-height: 100vh;
-    
+
 
     overflow-x: hidden;
     z-index: 0;
@@ -34,13 +32,15 @@ body::before {
 
     z-index: -1;
 }
-.app{
+
+.app {
     width: 590px;
     padding: 1rem;
 }
+
 .navbar ul {
     list-style: none;
-    padding: 0;
+
     display: flex;
     justify-content: left;
     gap: 1rem;
@@ -56,56 +56,56 @@ body::before {
 .navbar a:hover {
     color: #443da3;
 }
-.hero2{
+
+.hero2 {
     padding-left: 20px;
     padding-right: 20px;
 }
-.hero2 .title h1{
+
+.hero2 .title h2 {
     text-align: center;
 }
+
 .hero2 .project1 {
     border: 1px solid gray;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-
-
-
-
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 5px;
 }
+
 .hero2 .project2 {
     border: 1px solid gray;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-
-
-
-
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 5px;
 }
+
 .hero2 .project3 {
     border: 1px solid gray;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-
-
-
+    padding-left: 30px;
+    padding-right: 30px;
 
 }
-.hero2 .project1-title{
+
+.hero2 .project1-title {
     display: flex;
     justify-content: space-between;
 }
-.hero2 .project2-title{
+
+.hero2 .project2-title {
     display: flex;
     justify-content: space-between;
 }
-.hero2 .project3-title{
+
+.hero2 .project3-title {
     display: flex;
     justify-content: space-between;
 }
-.hero2 button{
+
+.hero2 button {
     background: none;
     border-radius: 12px;
     height: fit-content;
@@ -113,17 +113,14 @@ body::before {
     padding: 5px 10px;
     background: transparent;
 }
-.hero2 button:hover{
+
+.hero2 button:hover {
     background-color: #fff;
     transition: 0.5s;
 }
 
-.fa-github{
+.fa-github {
     font-size: 24px;
-}
-.copyright p{
-    font-size: 0.8rem;
-
 }
 
 @keyframes smoothBreath {
@@ -138,14 +135,15 @@ body::before {
 
     }
 }
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
 
-  .hero img {
-    width: 90%;
-  }
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 90%;
+    }
 }

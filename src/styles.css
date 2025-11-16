@@ -35,6 +35,81 @@ body::before {
     padding: 1rem;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mode-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.mode-toggle {
+    position: relative;
+    width: 45px;
+    height: 26px;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+    background-color: #b4b4b4;
+}
+
+.mode-toggle:focus {
+    outline: none;
+}
+
+
+.toggle-slider {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+
+}
+
+.toggle-slider.active {
+    transform: translateX(20px);
+}
+
+.icon {
+    transition: opacity 0.3s ease, color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.sun-icon {
+    color: #dbdbdb;
+}
+
+.moon-icon {
+    color: #443da3;
+    opacity: 0.6;
+}
+
+.sun-icon:not(.active) {
+    opacity: 0.3;
+}
+
+.moon-icon:not(.active) {
+    opacity: 0.3;
+}
+
+.sun-icon.active {
+    opacity: 1;
+}
+
+.moon-icon.active {
+    opacity: 1;
+}
+
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -64,7 +139,7 @@ body::before {
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 1rem;
-    
+
 }
 
 .hero p {
@@ -80,18 +155,23 @@ body::before {
     margin-top: 35px;
     gap: 2rem;
 }
+
 .footer .links {
     gap: 2.5rem;
 }
-.footer .links button{
+
+.footer .links button {
     background: transparent;
-} 
-.footer a{
+}
+
+.footer a {
     color: #b4b4b4;
 }
+
 .footer a:hover {
     color: #b4b4b4;
 }
+
 .footer p {
     margin-top: 1.5rem;
     font-size: 0.8rem;
@@ -109,14 +189,15 @@ body::before {
 
     }
 }
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
 
-  .hero img {
-    width: 90%;
-  }
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 90%;
+    }
 }
