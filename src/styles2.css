@@ -56,7 +56,10 @@ body::before {
 .navbar a:hover {
     color: #443da3;
 }
-
+.hero2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .hero2 .title h1{
     text-align: center;
 }
@@ -67,6 +70,8 @@ body::before {
     margin-bottom: 10px;
 
 
+
+
 }
 .hero2 .project2 {
     border: 1px solid gray;
@@ -75,12 +80,16 @@ body::before {
     margin-bottom: 10px;
 
 
+
+
 }
 .hero2 .project3 {
     border: 1px solid gray;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+
+
 
 
 }
@@ -102,22 +111,16 @@ body::before {
     height: fit-content;
     margin-top: 18px;
     padding: 5px 10px;
-
+    background: transparent;
 }
 .hero2 button:hover{
-    background-color: white;
-    border: none;
-
+    background-color: #fff;
+    transition: 0.5s;
 }
 
 .fa-github{
     font-size: 24px;
-    color: #ffffff;
 }
-.fa-github:hover{
-    color: #443da3;
-
-}    
 .copyright p{
     font-size: 0.8rem;
 

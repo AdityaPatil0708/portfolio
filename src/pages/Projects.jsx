@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import HeroW from "../components/HeroW";
-import Footer from "../components/Footer";
+
 import "../styles2.css";
 
 function Projects() {

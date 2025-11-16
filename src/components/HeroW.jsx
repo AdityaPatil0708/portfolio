@@ -2,7 +2,7 @@ export default function Hero2() {
     return (
         <section className="hero2">
             <div className="title">
-                <h1>My Projects</h1>
+                <h1>Projects</h1>
             </div>
             <div className="project1">
                 <div className="project1-title">

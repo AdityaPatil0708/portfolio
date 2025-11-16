@@ -1,17 +1,12 @@
 body {
     font-family: "Poppins", sans-serif;
-
     background: #000;
-
     position: relative;
     color: #b4b4b4;
     min-height: 100vh;
     margin: 0;
-
-
     overflow-x: hidden;
     z-index: 0;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -69,10 +64,12 @@ body::before {
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 1rem;
+    
 }
 
 .hero p {
     padding-top: 0.5rem;
+    padding-right: 0.8rem;
     letter-spacing: 0.1px;
     color: #d0d0d0;
     font-size: 0.95rem;
@@ -86,29 +83,15 @@ body::before {
 .footer .links {
     gap: 2.5rem;
 }
-.footer .links .git button{
-    background: none;
-    border-radius: 15px;
-}
-.footer .links .git button:hover{
-    transition: 0.5s;
-}
-.footer .links .linkedin button:hover{
-    transition: 0.5s;
-}
-.footer .links .linkedin button{
-    background: none;
-    border-radius: 15px;
-}
-
+.footer .links button{
+    background: transparent;
+} 
 .footer a{
-    color: #d0d0d0;
+    color: #b4b4b4;
 }
-.footer a:hover{
-    color: #d0d0d0;
-    border: none;
+.footer a:hover {
+    color: #b4b4b4;
 }
-
 .footer p {
     margin-top: 1.5rem;
     font-size: 0.8rem;
