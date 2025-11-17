@@ -4,7 +4,7 @@ export default function Profile() {
     return (
         <section className="profile">
             <div className='profile-1'>
-                <img src={profile} alt="Aditya's profile" className="avatar" /><br />
+                <img src={profile} alt="Aditya's profile" className="avatar" />
                 <p>Aditya Patil.</p>
             </div>
             <div className='profile-2'>

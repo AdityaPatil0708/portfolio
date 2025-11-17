@@ -132,7 +132,10 @@
         margin-left: 0;
         text-align: center;
     }
-
+    .profile .profile-2 h2 {
+        margin: 0;
+        
+    }
     .profile .profile-2 h2::after {
         left: 50%;
         transform: translateX(-50%) scaleX(0);
@@ -152,15 +155,17 @@
 
 @media (max-width: 480px) {
     .avatar {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
-
     .profile .profile-2 strong {
         font-size: 14px;
+        text-align: center;
     }
 
     .profile .profile-2 p {
         font-size: 12px;
+        text-align: left;
+        padding-left: 20px;
     }
 }

@@ -187,7 +187,7 @@ body::before {
 
 .footer {
     font-size: 0.9rem;
-    margin-top: 35px;
+    margin-top: 15px;
     gap: 2rem;
 }
 
@@ -280,7 +280,6 @@ body::before {
 
     /* Footer */
     .footer {
-        margin-top: 25px;
         text-align: center;
     }
 
@@ -320,7 +319,9 @@ body::before {
     }
 
     .hero p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        text-align: justify;
+        padding: 10px;
     }
 }
 
