@@ -108,3 +108,59 @@
   from { transform: scaleX(0); }
   to   { transform: scaleX(0.19); }
 }
+/* Add at the end of about.css */
+
+@media (max-width: 768px) {
+    .about {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .profile .profile-1 {
+        order: 1;
+    }
+
+    .profile .profile-2 {
+        order: 2;
+        padding: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .profile .profile-2 h2::after {
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: center;
+    }
+
+    @keyframes underlineSweep {
+        from { transform: translateX(-50%) scaleX(0); }
+        to { transform: translateX(-50%) scaleX(0.2); }
+    }
+
+    .avatar {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile .profile-2 strong {
+        font-size: 14px;
+    }
+
+    .profile .profile-2 p {
+        font-size: 12px;
+    }
+}

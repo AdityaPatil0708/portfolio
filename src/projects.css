@@ -135,3 +135,65 @@ body::before {
 .fa-github:hover {
     color: var(--button-hover-bg);
 }
+/* Add at the end of projects.css */
+
+@media (max-width: 768px) {
+    .hero2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero2 .title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .hero2 .project1,
+    .hero2 .project2,
+    .hero2 .project3 {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    .hero2 .project1-title h3,
+    .hero2 .project2-title h3,
+    .hero2 .project3-title h3 {
+        font-size: 1.1rem;
+    }
+
+    .hero2 button {
+        margin-top: 5px;
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+
+    .fa-github {
+        padding-top: 7px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero2 .title h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero2 .project1,
+    .hero2 .project2,
+    .hero2 .project3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero2 .project1-title h3,
+    .hero2 .project2-title h3,
+    .hero2 .project3-title h3 {
+        font-size: 1rem;
+    }
+}   
