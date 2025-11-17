@@ -14,7 +14,7 @@
   --button-hover-bg: #443da3;
   --button-hover-text: #ffffff;
   --underline-color: #4a4a4a;
-  --avatar-glow: #443da3;
+
 }
 
 :root[data-theme="dark"] {
@@ -32,7 +32,7 @@
   --button-hover-bg: #ffffff;
   --button-hover-text: #1a1a1a;
   --underline-color: #b4b4b4;
-  --avatar-glow: #443da3;
+
 }
 .about {
     width: 590px;
@@ -102,7 +102,6 @@
 
 .avatar:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px var(--avatar-glow), 0 0 30px var(--avatar-glow), 0 0 40px var(--avatar-glow);
 }
 
 @keyframes underlineSweep {
