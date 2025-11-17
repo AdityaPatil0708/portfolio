@@ -222,7 +222,7 @@ body::before {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .hero {
         flex-direction: column;
         gap: 2rem;
@@ -234,17 +234,17 @@ body::before {
     }
 }
 
-/* Add at the end of landing.css */
 
-@media (max-width: 768px) {
-    /* App container - make it full width */
+
+@media (max-width: 800px) {
+
     .app {
         width: 100%;
         padding: 1rem;
         max-width: 100%;
     }
 
-    /* Navbar - stack vertically */
+
     .navbar {
         flex-direction: column;
         gap: 1rem;
@@ -262,8 +262,6 @@ body::before {
         align-self: center;
 
     }
-
-    /* Hero section */
     .hero {
         text-align: center;
         padding-top: 1rem;
@@ -289,7 +287,7 @@ body::before {
         align-items: center;
     }
 
-    /* Reduce gradient animation on mobile */
+
     body::before {
         animation: smoothBreathMobile 8s ease-in-out infinite;
     }
@@ -325,10 +323,8 @@ body::before {
     }
 }
 
-@media (max-width: 768px) {
-    /* ... your other mobile styles ... */
+@media (max-width: 800px) {
 
-    /* Adjust gradient for mobile screens */
     body::before {
         background: radial-gradient(ellipse 120% 60% at center,
                 var(--bg-gradient-start) 0%,
