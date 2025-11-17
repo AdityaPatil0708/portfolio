@@ -53,7 +53,18 @@ body::before {
     z-index: -1;
 
 }
-
+:root[data-theme="light"] body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse 78% 88% at center,
+            var(--bg-gradient-start) 10%,
+            var(--bg-gradient-end) 32%);
+    background-size: 100% 100%;
+    background-position: center;
+    animation: smoothBreath 8s ease-in-out infinite;
+    z-index: -1;
+}
 .app {
     width: 590px;
     padding: 1rem;

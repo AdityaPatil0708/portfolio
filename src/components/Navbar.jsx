@@ -3,17 +3,24 @@ import { Sun, Moon } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Navbar({ onThemeChange }) {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme ? savedTheme === 'dark' : true;
+  });
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }, []);
+    const theme = isDark ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [isDark]);
 
   const toggleMode = () => {
     const newTheme = !isDark;
     setIsDark(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme ? 'dark' : 'light');
-    if (onThemeChange) onThemeChange(newTheme ? 'dark' : 'light');
+    const theme = newTheme ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    if (onThemeChange) onThemeChange(theme);
   };
 
   return (
