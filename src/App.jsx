@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Landing from "./pages/Landing";
 import Projects from "./pages/Projects";
-import "./styles.css";
+import "./landing.css";
 
 function App() {
   return (

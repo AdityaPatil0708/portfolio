@@ -60,14 +60,13 @@ body::before {
   --button-hover-text: #1a1a1a;
 }
 .hero2 {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 30px;
 }
-
 .hero2 .title h2 {
-    text-align: center;
     color: var(--text-primary);
     transition: color 0.3s ease;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .hero2 .project1 {
@@ -75,7 +74,7 @@ body::before {
     border-radius: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -84,7 +83,7 @@ body::before {
     border-radius: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -135,15 +134,4 @@ body::before {
 }
 .fa-github:hover {
     color: var(--button-hover-bg);
-}
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        gap: 2rem;
-        text-align: center;
-    }
-
-    .hero img {
-        width: 90%;
-    }
 }

@@ -7,7 +7,7 @@ export default function Hero2() {
             <div className="project1">
                 <div className="project1-title">
                     <div>
-                     <h2>Chat-App (WebSockets)</h2>
+                     <h3>Chat-App (WebSockets)</h3>
                     </div>
                     
                     <button>
@@ -17,7 +17,7 @@ export default function Hero2() {
             </div>
             <div className="project2">
                 <div className="project2-title">
-                    <h2>Sneaker-Store (Backend + CI/CD)</h2>
+                    <h3>Sneaker-Store (Backend + CI/CD)</h3>
                     <button>
                         <a href="https://github.com/AdityaPatil0708/sneaker-store-backend.git"><i class="fab fa-github"></i></a>
                     </button>
@@ -25,7 +25,7 @@ export default function Hero2() {
             </div>
             <div className="project3">
                 <div className="project3-title">
-                    <h2>Rest API Service (CI/CD)</h2>
+                    <h3>Rest API Service (CI/CD)</h3>
                     <button>
                         <a href="https://github.com/AdityaPatil0708/rest-api-service.git"><i class="fab fa-github"></i></a>
                     </button>

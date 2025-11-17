@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar.jsx";
 import Hero from "../components/Hero.jsx";
 import Footer from "../components/Footer.jsx";
 
-import "../styles.css";
+import "../landing.css";
 
 function Landing() {
   return (

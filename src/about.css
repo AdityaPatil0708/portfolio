@@ -75,7 +75,7 @@
     background: var(--underline-color);
     transform-origin: left;
     transform: scaleX(0);
-    animation: underlineSweep 1s ease-out forwards;
+    animation: underlineSweep 1s ease-out forwards; 
     transition: background 0.3s ease;
 }
 
@@ -106,5 +106,5 @@
 
 @keyframes underlineSweep {
   from { transform: scaleX(0); }
-  to   { transform: scaleX(0.2); }
+  to   { transform: scaleX(0.19); }
 }

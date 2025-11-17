@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 export default function Navbar({ onThemeChange }) {
   const [isDark, setIsDark] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
-    return savedTheme ? savedTheme === 'dark' : true;
+    return savedTheme ? savedTheme === 'dark' : false;
   });
 
   useEffect(() => {
