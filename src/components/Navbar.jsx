@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 export default function Navbar({ onThemeChange }) {
   const [isDark, setIsDark] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
-    return savedTheme ? savedTheme === 'dark' : false;
+    return savedTheme ? savedTheme === 'dark' : true;
   });
 
   useEffect(() => {
@@ -26,16 +26,16 @@ export default function Navbar({ onThemeChange }) {
   return (
     <nav className="navbar">
       <ul>
-        <li><Link to="/">home</Link></li>
-        <li><Link to="/about">about</Link></li>
-        <li><Link to="/projects">projects</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
         <li>
           <a 
             href="https://drive.google.com/file/d/1OzS5iCJWlJKqsmrREoIbMyrxCWRNTS0B/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            resume
+            Resume
           </a>
         </li>
       </ul>

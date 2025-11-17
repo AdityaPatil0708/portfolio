@@ -5,7 +5,7 @@ export default function Profile() {
         <section className="profile">
             <div className='profile-1'>
                 <img src={profile} alt="Aditya's profile" className="avatar" />
-                <p>Aditya Patil.</p>
+                <p>Aditya Patil</p>
             </div>
             <div className='profile-2'>
                 <h2>Skills</h2>
