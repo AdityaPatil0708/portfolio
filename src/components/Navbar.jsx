@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
 import { Sun, Moon } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export default function Navbar() {
+export default function Navbar({ onThemeChange }) {
   const [isDark, setIsDark] = useState(true);
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }, []);
+
   const toggleMode = () => {
-    setIsDark(!isDark);
-    
-    document.documentElement.classList.toggle('dark');
+    const newTheme = !isDark;
+    setIsDark(newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme ? 'dark' : 'light');
+    if (onThemeChange) onThemeChange(newTheme ? 'dark' : 'light');
   };
 
   return (
@@ -28,7 +33,6 @@ export default function Navbar() {
         </li>
       </ul>
       
-      {/* Mode Toggle Button */}
       <div className="mode-toggle-wrapper">
         <Sun className={`icon sun-icon ${!isDark ? 'active' : ''}`} size={20} />
         <button

@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="links">
         <span className="git">
           <button>
-            <a href="https://github.com/AdityaPatil0708">↗ github</a>
+            <a href="https://github.com/AdityaPatil0708">↗ Github</a>
             </button>
         </span>
         &nbsp; &nbsp;

@@ -1,6 +1,41 @@
+/* Theme Variables */
+:root[data-theme="light"] {
+  --bg-gradient-start: #e0dcff;
+  --bg-gradient-end: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --accent-color: #443da3;
+  --toggle-bg: #d0d0d0;
+  --link-color: #4a4a4a;
+  --link-hover: #443da3;
+  --moon-color: #443da3;
+  --sun-color: #ffa500;
+  --border-color: #d0d0d0;
+  --button-hover-bg: #443da3;
+  --button-hover-text: #ffffff;
+  --underline-color: #4a4a4a;
+  --avatar-glow: #443da3;
+}
+
+:root[data-theme="dark"] {
+  --bg-gradient-start: #443da3;
+  --bg-gradient-end: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #b4b4b4;
+  --accent-color: #443da3;
+  --toggle-bg: #b4b4b4;
+  --link-color: #b4b4b4;
+  --link-hover: #443da3;
+  --moon-color: #443da3;
+  --sun-color: #dbdbdb;
+  --border-color: gray;
+  --button-hover-bg: #ffffff;
+  --button-hover-text: #1a1a1a;
+  --underline-color: #b4b4b4;
+  --avatar-glow: #443da3;
+}
 .about {
     width: 590px;
-
 }
 
 .profile {
@@ -9,61 +44,67 @@
     align-items: center;
     gap: 2rem;
     height: 345px;
-
 }
 
 .profile .profile-1 p {
     margin: 0;
     font-weight: 600;
     text-align: center;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
 }
 
 .profile .profile-2 {
     padding: 15px;
     margin-left: 10px;
-
-
 }
 
 .profile .profile-2 h2 {
     position: relative;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
 }
 
 .profile .profile-2 h2::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 3px;
     height: 2px;
     width: 100%;
-    background: #b4b4b4;
+    background: var(--underline-color);
     transform-origin: left;
     transform: scaleX(0);
-    animation: underlineSweep .7s ease-out forwards;
+    animation: underlineSweep 1s ease-out forwards;
+    transition: background 0.3s ease;
 }
 
 .profile .profile-2 strong {
     font-size: 15px;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
 }
 
 .profile .profile-2 p {
     font-size: 13px;
-    color: #b4b4b4; ;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
 }
 
 .avatar {
     width: 170px;
     height: 170px;
-
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .avatar:hover {
     transform: scale(1.05);
-    /* box-shadow: 0 0 20px #443da3, 0 0 30px #443da3, 0 0 0px #443da3; */
+    box-shadow: 0 0 20px var(--avatar-glow), 0 0 30px var(--avatar-glow), 0 0 40px var(--avatar-glow);
 }
+
 @keyframes underlineSweep {
   from { transform: scaleX(0); }
   to   { transform: scaleX(0.2); }

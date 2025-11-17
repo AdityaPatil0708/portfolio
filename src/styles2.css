@@ -1,14 +1,12 @@
-body {
+/* body {
     font-family: "Poppins", sans-serif;
     margin: 0;
+    padding: 0;
     position: relative;
     color: #b4b4b4;
     min-height: 100vh;
-
-
     overflow-x: hidden;
     z-index: 0;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -31,32 +29,36 @@ body::before {
     animation: smoothBreath 5s ease-in-out infinite;
 
     z-index: -1;
+} */
+/* Theme Variables */
+:root[data-theme="light"] {
+  --bg-gradient-start: #e0dcff;
+  --bg-gradient-end: #ffffff;
+  --text-primary: #4a4a4a;
+  --text-secondary: #4a4a4a;
+  --toggle-bg: #d0d0d0;
+  --link-color: #4a4a4a;
+  --link-hover: #443da3;
+  --moon-color: #443da3;
+  --sun-color: #ffa500;
+  --border-color: #d0d0d0;
+    --button-hover-bg: none;
 }
 
-.app {
-    width: 590px;
-    padding: 1rem;
+:root[data-theme="dark"] {
+  --bg-gradient-start: #443da3;
+  --bg-gradient-end: #000000;
+  --text-primary: #b4b4b4;
+  --text-secondary: #b4b4b4;
+  --toggle-bg: #b4b4b4;
+  --link-color: #b4b4b4;
+  --link-hover: #443da3;
+  --moon-color: #443da3;
+  --sun-color: #dbdbdb;
+  --border-color: gray;
+  --button-hover-bg: none;
+  --button-hover-text: #1a1a1a;
 }
-
-.navbar ul {
-    list-style: none;
-
-    display: flex;
-    justify-content: left;
-    gap: 1rem;
-    color: #ccc;
-}
-
-.navbar a {
-    color: #d0d0d0;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.navbar a:hover {
-    color: #443da3;
-}
-
 .hero2 {
     padding-left: 20px;
     padding-right: 20px;
@@ -64,30 +66,34 @@ body::before {
 
 .hero2 .title h2 {
     text-align: center;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
 }
 
 .hero2 .project1 {
-    border: 1px solid gray;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 5px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .hero2 .project2 {
-    border: 1px solid gray;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 5px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .hero2 .project3 {
-    border: 1px solid gray;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     padding-left: 30px;
     padding-right: 30px;
-
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .hero2 .project1-title {
@@ -112,30 +118,24 @@ body::before {
     margin-top: 18px;
     padding: 5px 10px;
     background: transparent;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero2 button:hover {
-    background-color: #fff;
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
     transition: 0.5s;
 }
 
 .fa-github {
     font-size: 24px;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
 }
-
-@keyframes smoothBreath {
-
-    0%,
-    100% {
-        transform: scale(0.9);
-    }
-
-    50% {
-        transform: scale(1.2);
-
-    }
+.fa-github:hover {
+    color: var(--button-hover-bg);
 }
-
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
