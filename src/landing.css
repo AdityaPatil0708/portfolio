@@ -49,7 +49,7 @@ body::before {
             var(--bg-gradient-end) 32%);
     background-size: 100% 100%;
     background-position: center;
-    animation: smoothBreath 8s ease-in-out infinite;
+    animation: smoothBreath 6s ease-in-out infinite;
     z-index: -1;
 
 }
@@ -62,7 +62,7 @@ body::before {
             var(--bg-gradient-end) 32%);
     background-size: 100% 100%;
     background-position: center;
-    animation: smoothBreath 8s ease-in-out infinite;
+    animation: smoothBreath 6s ease-in-out infinite;
     z-index: -1;
 }
 .app {
