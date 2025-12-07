@@ -1,4 +1,4 @@
-import profile from '../images/adityaprofile2.jpeg';
+import profile from '../images/adityaprofile2.webp';
 
 export default function Profile() {
     return (
