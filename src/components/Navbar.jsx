@@ -31,7 +31,7 @@ export default function Navbar({ onThemeChange }) {
         <li><Link to="/projects">Projects</Link></li>
         <li>
           <a 
-            href="https://drive.google.com/file/d/1Jc45rAHkXIrSybdqHZE0lWvIxw7wePTp/view?usp=drive_link`"
+            href="https://drive.google.com/file/d/1hSfYwFPjx7u3HQDvDTWZsK4tqpW09DfG/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
