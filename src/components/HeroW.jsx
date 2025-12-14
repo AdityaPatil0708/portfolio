@@ -17,9 +17,9 @@ export default function Hero2() {
             </div>
             <div className="project2">
                 <div className="project2-title">
-                    <h3>Sneaker-Store (Backend + CI/CD)</h3>
+                    <h3>Sneaker-Store</h3>
                     <button>
-                        <a href="https://github.com/AdityaPatil0708/sneaker-store-backend.git"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/AdityaPatil0708/UrbanSteps.git"><i class="fab fa-github"></i></a>
                     </button>
                 </div>
             </div>
