@@ -34,6 +34,23 @@ export default function Hero2() {
           </div>
         </div>
       </div>
+      <div className="project2">
+        <div className="project2-title">
+          <h3>Url-shortener</h3>
+          <div>
+            <button>
+              <a href="https://github.com/AdityaPatil0708/url-shortener.git">
+                <i class="fab fa-github"></i>
+              </a>
+            </button>
+            <button>
+              <a href="https://url-shortener-flame-nine.vercel.app/">
+                <i class="link-icon">↗</i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
       <div className="project3">
         <div className="project3-title">
           <h3>Rest API Service (CI/CD)</h3>
