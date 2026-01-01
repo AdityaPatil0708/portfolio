@@ -44,7 +44,7 @@ export default function Hero2() {
               </a>
             </button>
             <button>
-              <a href="https://url-shortener-pi-ten.vercel.app/">
+              <a href="http://aditya.jumpingcrab.com/">
                 <i class="link-icon">↗</i>
               </a>
             </button>
