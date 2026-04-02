@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Links } from "./Links";
 
 export default function Hero1() {
   return (
@@ -25,26 +25,10 @@ export default function Hero1() {
           efficient, secure, and easy to maintain.
         </p>
 
-        <div className="flex gap-8 mt-5">
-          <button className="hover:border hover:border-[#443da3] transition duration-200 px-3 py-2 rounded-md">
-            <Link
-              href="https://github.com/AdityaPatil0708"
-              target="_blank"
-              className="flex items-center gap-1.5 text-sm text-[#4a4a4a] hover:text-[#443da3]"
-            >
-            ↗ Github
-            </Link>
-          </button>
-          <button className="hover:border hover:border-[#443da3] transition duration-300 px-3 py-2 rounded-md">
-            <Link
-              href="https://www.linkedin.com/in/aditya-patil-ap2907"
-              target="_blank"
-              className="flex items-center gap-1.5 text-sm text-[#4a4a4a] hover:text-[#443da3]"
-            >
-            ↗ LinkedIn
-            </Link>
-          </button>
+        <div className="flex gap-8 mt-10">
+          <Links/>
         </div>
+
       </div>
     </main>
   );

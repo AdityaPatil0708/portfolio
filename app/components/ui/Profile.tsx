@@ -1,49 +1,45 @@
-import Link from "next/link"
+import { Links } from "./Links";
 
-export function Profile(){
-    return(
-        <div className="relative rounded-2xl px-10 py-12">
-        <h1 className="text-4xl font-semibold text-[#4a4a4a] mb-5 tracking-tight">
-          Aditya Patil
-        </h1>
+export function Profile() {
+  return (
+    <div className="relative rounded-2xl px-10 py-10 sm:py-13">
+      {/* Top: avatar + skills */}
+      <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 items-center sm:items-start">
+        {/* Left: avatar + name */}
+        <div className="flex flex-col items-center gap-2 shrink-0 sm:pt-5">
+          <img
+            src="./profile.png"
+            alt=""
+            className="rounded-full h-28 sm:h-35"
+          />
+          <p className="font-semibold text-[#4a4a4a] text-sm text-center">
+            Aditya Patil
+          </p>
+        </div>
 
-        <p className="text-gray-600 leading-relaxed text-[14px] md:text-[15px]">
-          I&apos;m a{" "}
-          <strong className="font-semibold text-[#4a4a4a]">
-            Full Stack Developer &amp; DevOps Engineer
-          </strong>{" "}
-          with a strong focus on building scalable server-side systems and
-          creating automated, reliable deployment workflows. Through
-          internships, projects, and continuous learning, I&apos;ve gained
-          expertise in backend development, API design, database management,
-          cloud services, and infrastructure automation. I specialize in
-          developing high-performance RESTful APIs, containerizing applications,
-          and implementing CI/CD pipelines using tools like Docker, Kubernetes,
-          and Jenkins. With experience across Node.js, Express.js, SQL/NoSQL
-          databases, AWS and GCP. I enjoy architecting systems that are
-          efficient, secure, and easy to maintain.
-        </p>
-
-        <div className="flex gap-8 mt-5">
-          <button className="hover:border hover:border-[#443da3] transition duration-200 px-3 py-2 rounded-md">
-            <Link
-              href="https://github.com/AdityaPatil0708"
-              target="_blank"
-              className="flex items-center gap-1.5 text-sm text-[#4a4a4a] hover:text-[#443da3]"
-            >
-            ↗ Github
-            </Link>
-          </button>
-          <button className="hover:border hover:border-[#443da3] transition duration-300 px-3 py-2 rounded-md">
-            <Link
-              href="https://www.linkedin.com/in/aditya-patil-ap2907"
-              target="_blank"
-              className="flex items-center gap-1.5 text-sm text-[#4a4a4a] hover:text-[#443da3]"
-            >
-            ↗ LinkedIn
-            </Link>
-          </button>
+        {/* Right: skills */}
+        <div className="flex flex-col gap-2 w-full">
+          <h2 className="text-2xl font-bold text-[#4a4a4a] underline underline-offset-4 mb-3 text-center md:text-left">
+            Skills
+          </h2>
+          {[
+            { label: "Languages", value: "Python, JavaScript, Typescript" },
+            { label: "Technologies", value: "Express.js, Node.js, Next.js, Websockets" },
+            { label: "Databases", value: "MongoDB, PostgreSQL" },
+            { label: "DevOps & Tools", value: "Docker, Kubernetes, GitHub, Jenkins, GitHub Actions, AWS, GCP" },
+            { label: "General", value: "Linux, Networking, Operating Systems" },
+          ].map(({ label, value }) => (
+            <p key={label} className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed">
+              <strong className="text-[#4a4a4a]">• {label} : </strong>
+              {value}
+            </p>
+          ))}
         </div>
       </div>
-    )
+
+      <div className="flex gap-8 mt-8 sm:mt-10">
+        <Links />
+      </div>
+    </div>
+  );
 }

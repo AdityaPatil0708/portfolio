@@ -23,6 +23,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Aditya Patil",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
