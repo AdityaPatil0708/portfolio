@@ -1,0 +1,11 @@
+export default function Footer() {
+  const year = new Date().getFullYear();
+
+  return (
+    <div className="mx-10">
+      <p className="text-sm text-[#4a4a4a]">
+        © {year} Aditya Patil
+      </p>
+    </div>
+  );
+}
