@@ -35,7 +35,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       <div
         className={`relative min-h-screen overflow-x-hidden transition-colors ${
           theme === "dark"
-            ? "dark bg-black text-zinc-100"
+            ? "dark bg-gray-950 text-zinc-100"
             : "bg-white text-[#4a4a4a]"
         }`}
       >

@@ -49,7 +49,7 @@ export function Myprojects() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="flex items-center justify-between px-6 py-5 rounded-md border border-zinc-400/60 dark:border-zinc-700 dark:bg-zinc-900/40 hover:dark:bg-zinc-900/60 transition-colors"
+            className="running-border flex items-center justify-between px-6 py-5 rounded-md border border-zinc-400/60 dark:border-transparent dark:bg-zinc-900/20 hover:dark:bg-zinc-900/40 transition-colors"
           >
             <h3 className="text-[16px] md:text-[18px] font-semibold text-[#4a4a4a] dark:text-zinc-200 m-0">
               {project.title}
