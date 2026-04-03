@@ -40,11 +40,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-screen flex flex-col font-poppins">
+      <body className="h-screen overflow-hidden font-poppins">
         <ThemeProvider>
-          <div className="max-w-2xl mx-auto w-full flex flex-col min-h-screen mt-40">
+          <div className="mx-auto flex h-screen w-full max-w-2xl flex-col overflow-hidden pt-28">
             <Navbar />
-            <main>{children}</main>
+            <div className="overflow-hidden">{children}</div>
             <Footer />
           </div>
         </ThemeProvider>
