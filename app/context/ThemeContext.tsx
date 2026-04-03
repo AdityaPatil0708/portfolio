@@ -33,13 +33,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div
-        className={`min-h-screen transition-colors ${
+        className={`relative min-h-screen overflow-x-hidden transition-colors ${
           theme === "dark"
             ? "dark bg-black text-zinc-100"
             : "bg-white text-[#4a4a4a]"
         }`}
       >
-        <div className="pointer-events-none fixed inset-0">
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="absolute -top-24 -left-20 h-80 w-40 rounded-full bg-[#443da3]/18 blur-3xl dark:bg-[#443da3]/18" />
           <div className="absolute -bottom-24 -right-20 h-80 w-40 rounded-full bg-[#443da3]/12 blur-3xl dark:bg-[#443da3]/12" />
           <div className="absolute bottom-0 left-1/5 h-30 w-90 rounded-full bg-[#443da3]/10 blur-3xl dark:bg-[#443da3]/18" />

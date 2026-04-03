@@ -44,7 +44,7 @@ export default function RootLayout({
         <ThemeProvider>
           <div className="mx-auto flex min-h-screen w-full max-w-2xl flex-col py-28">
             <Navbar />
-            <main className="flex-1">{children}</main>
+            <main className="">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>

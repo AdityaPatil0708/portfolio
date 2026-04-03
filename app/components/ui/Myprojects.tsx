@@ -41,7 +41,7 @@ function GithubIcon() {
 export function Myprojects() {
   return (
     <section className="px-10 py-10">
-      <h2 className="text-3xl font-semibold text-[#4a4a4a] dark:text-zinc-100 mb-6">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#4a4a4a] dark:text-zinc-100 mb-6">
         Projects
       </h2>
 
@@ -51,7 +51,7 @@ export function Myprojects() {
             key={project.title}
             className="flex items-center justify-between px-6 py-5 rounded-md border border-zinc-400/60 dark:border-zinc-700 dark:bg-zinc-900/40 hover:dark:bg-zinc-900/60 transition-colors"
           >
-            <h3 className="text-[18px] font-semibold text-[#4a4a4a] dark:text-zinc-200 m-0">
+            <h3 className="text-[16px] md:text-[18px] font-semibold text-[#4a4a4a] dark:text-zinc-200 m-0">
               {project.title}
             </h3>
 
