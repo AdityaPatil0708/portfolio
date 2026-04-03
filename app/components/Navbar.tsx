@@ -34,7 +34,7 @@ export default function Navbar() {
         <Sun className={`transition-opacity ${!isDark ? "text-[#ffa500] opacity-100" : "text-zinc-400 opacity-40"}`} size={18} />
         <button
           onClick={toggleTheme}
-          className={`relative w-8 md:w-10 h-4 md:h-5 rounded-full transition-colors duration-300 ${
+          className={`relative w-9 h-4 md:w-10 md:h-5 rounded-full transition-colors duration-300 ${
             isDark ? "bg-indigo-500" : "bg-gray-300"
           }`}
           aria-label="Toggle dark mode"
