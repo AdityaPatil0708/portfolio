@@ -28,6 +28,11 @@ const projects: Project[] = [
     github: "https://github.com/AdityaPatil0708/apti-ace.git",
     live: "https://apti-ace11.vercel.app/",
   },
+  {
+    title: "UrbanSteps",
+    github: "https://github.com/AdityaPatil0708/sneaker-store-frontend.git",
+    live: "https://sneaker-store-frontend-xi.vercel.app/",
+  },
 ];
 
 function GithubIcon() {
