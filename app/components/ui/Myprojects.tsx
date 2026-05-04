@@ -29,6 +29,11 @@ const projects: Project[] = [
     live: "https://apti-ace11.vercel.app/",
   },
   {
+    title: "Purchase Tracker",
+    github: "https://github.com/AdityaPatil0708/purchase-tracker-frontend.git",
+    live: "http://13.239.16.20/",
+  },
+  {
     title: "UrbanSteps",
     github: "https://github.com/AdityaPatil0708/sneaker-store-frontend.git",
     live: "https://sneaker-store-frontend-xi.vercel.app/",
