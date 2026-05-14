@@ -26,7 +26,7 @@ export default function Navbar() {
           Projects
         </Link>
         <a
-          href="https://drive.google.com/file/d/1Rt_OjtnN85_LaGoC-Df4oAsIGoWk0EaX/view?usp=sharing"
+          href="https://drive.google.com/file/d/1D5m4EAVzfqsryTBGXNtjE0IlUgaorZt7/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors"
