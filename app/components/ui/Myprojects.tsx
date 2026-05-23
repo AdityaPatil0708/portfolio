@@ -6,37 +6,42 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "ShortURL",
-    github: "https://github.com/AdityaPatil0708/url-shortener-frontend.git",
-    live: "https://url-shortener-11.vercel.app/",
+    title: "CPL",
+    live: "https://cplgames.io",
+  },
+  {
+    title: "Purchase Tracker",
+    github: "https://github.com/AdityaPatil0708/purchase-enquiry-frontend.git",
+    live: "https://13.239.16.20.nip.io",
   },
   {
     title: "UPI to QRcode",
     github: "https://github.com/AdityaPatil0708/upi-to-qr-frontend.git",
-    live: "https://upi-to-qr.vercel.app/",
+    live: "https://upi-to-qr.vercel.app",
+  },
+  {
+    title: "AptiAce",
+    github: "https://github.com/AdityaPatil0708/apti-ace.git",
+    live: "https://apti-ace11.vercel.app",
+  },
+  {
+    title: "Finech (Saas landing page)",
+    github: "https://github.com/AdityaPatil0708/finech.git",
+    live: "https://finech-07.vercel.app",
+  },
+  {
+    title: "ShortURL",
+    github: "https://github.com/AdityaPatil0708/url-shortener-frontend.git",
+    live: "https://url-shortener-11.vercel.app",
   },
   {
     title: "Easyticket(*working)",
     github: "https://github.com/AdityaPatil0708/easy-ticket.git",
   },
   {
-    title: "CPL",
-    live: "https://cpl-frontend.aticloud.atican.dev/",
-  },
-  {
-    title: "AptiAce",
-    github: "https://github.com/AdityaPatil0708/apti-ace.git",
-    live: "https://apti-ace11.vercel.app/",
-  },
-  {
-    title: "Purchase Tracker",
-    github: "https://github.com/AdityaPatil0708/purchase-tracker-frontend.git",
-    live: "http://13.239.16.20/",
-  },
-  {
     title: "UrbanSteps",
     github: "https://github.com/AdityaPatil0708/sneaker-store-frontend.git",
-    live: "https://sneaker-store-frontend-xi.vercel.app/",
+    live: "https://sneaker-store-frontend-xi.vercel.app",
   },
 ];
 
@@ -51,7 +56,7 @@ function GithubIcon() {
 export function Myprojects() {
   return (
     <section className="px-10 py-10">
-      <h2 className="text-2xl md:text-3xl font-semibold text-[#4a4a4a] dark:text-zinc-100 mb-6">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#4a4a4a] dark:text-zinc-300 mb-6">
         Projects
       </h2>
 
@@ -59,13 +64,13 @@ export function Myprojects() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="running-border flex items-center justify-between md:px-6 px-4 md:py-5 py-3 rounded-md border border-zinc-400/60 dark:border-transparent dark:bg-zinc-900/20 hover:dark:bg-zinc-900/40 transition-colors"
+            className="running-border flex items-center justify-between md:px-6 px-4 md:py-5 py-3 rounded-md border border-zinc-400/60 dark:border-transparent dark:bg-transparent hover:dark:bg-gray-900/10 transition-colors"
           >
-            <h3 className="text-[16px] md:text-[18px] font-semibold text-[#4a4a4a] dark:text-zinc-200 m-0">
+            <h3 className="text-[16px] md:text-[18px] font-semibold text-[#4a4a4a] dark:text-zinc-300 m-0">
               {project.title}
             </h3>
 
-            <div className="flex items-center gap-4 text-[#4a4a4a] dark:text-zinc-400">
+            <div className="flex items-center gap-4 text-[#4a4a4a] dark:text-zinc-300">
               {project.github && (
                 <a
                   href={project.github}
