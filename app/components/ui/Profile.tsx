@@ -19,7 +19,7 @@ export function Profile() {
 
         {/* Right: skills */}
         <div className="flex flex-col gap-2 w-full">
-          <h2 className="text-2xl font-bold text-[#4a4a4a] dark:text-zinc-300 underline underline-offset-4 mb-3 text-left">
+          <h2 className="text-2xl font-bold text-[#4a4a4a] dark:text-zinc-300 mb-3 text-left">
             Skills
           </h2>
           {[

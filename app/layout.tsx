@@ -40,7 +40,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-screen font-poppins">
+      <body className="min-h-screen font-poppins ">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <div className="relative min-h-screen overflow-x-hidden transition-colors bg-white dark:bg-gray-950 text-[#4a4a4a] dark:text-zinc-300">
             
@@ -49,10 +49,10 @@ export default function RootLayout({
               aria-hidden="true"
               className="pointer-events-none fixed inset-0 flex items-center justify-center"
             >
-              <div className="h-[200px] w-[550px] rounded-full bg-[#443da3] blur-[200px] dark:blur-[100px] dark:bg-[#443da3]" />
+              <div className="h-[200px] w-[550px] rounded-full  blur-[200px] dark:blur-[100px] dark:bg-[#247d6e]" />
             </div>
 
-            <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-2xl flex-col py-35">
+            <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[600px] flex-col py-35">
               <Navbar />
               <main>{children}</main>
               <Footer />

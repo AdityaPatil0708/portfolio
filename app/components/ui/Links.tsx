@@ -16,7 +16,7 @@ export function Links() {
           key={href}
           href={href}
           target="_blank"
-          className="flex items-center gap-1.5 text-sm text-[#4a4a4a] dark:text-zinc-300 hover:text-[#443da3] dark:hover:text-indigo-400 border border-transparent hover:border-[#443da3] dark:hover:border-indigo-400 transition-colors duration-200 px-3 py-2 rounded-md"
+          className="flex items-center gap-1.5 text-sm text-[#4a4a4a] dark:text-zinc-300 border border-transparent hover:border-[#247d6e] dark:hover:border-[#247d6e] transition-colors duration-200 px-3 py-2 rounded-md"
         >
           <svg
             width="14"

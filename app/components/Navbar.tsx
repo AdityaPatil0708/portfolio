@@ -16,20 +16,20 @@ export default function Navbar() {
   return (
     <nav className="w-full flex items-center justify-between px-10 max-w-2xl mx-auto">
       <div className="flex items-center gap-3 md:gap-6 text-[13px] md:text-[15px] font-medium text-[#4a4a4a] dark:text-zinc-300">
-        <Link href="/" className="hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors">
+        <Link href="/" className="hover:text-[#247d6e]">
           Home
         </Link>
-        <Link href="/about" className="hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors">
+        <Link href="/about" className="hover:text-[#247d6e]">
           About
         </Link>
-        <Link href="/projects" className="hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors">
+        <Link href="/projects" className="hover:text-[#247d6e]">
           Projects
         </Link>
         <a
           href="https://drive.google.com/file/d/1D5m4EAVzfqsryTBGXNtjE0IlUgaorZt7/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors"
+          className="hover:text-[#247d6e] transition-colors"
         >
           Resume
         </a>
@@ -43,7 +43,7 @@ export default function Navbar() {
         <button
           onClick={() => setTheme(isDark ? "light" : "dark")}
           className={`relative w-9 h-4 md:w-10 md:h-5 rounded-full transition-colors duration-300 hover:cursor-pointer ${
-            mounted && isDark ? "bg-indigo-500" : "bg-gray-300"
+            mounted && isDark ? "bg-gray-300" : "bg-gray-300"
           }`}
           aria-label="Toggle dark mode"
         >
@@ -54,7 +54,7 @@ export default function Navbar() {
           />
         </button>
         <Moon
-          className={`transition-opacity ${mounted && isDark ? "text-[#443da3] opacity-100" : "text-zinc-400 opacity-40"}`}
+          className={`transition-opacity ${mounted && isDark ? "text-[#247d6e] opacity-100" : "text-zinc-400 opacity-40"}`}
           size={18}
         />
       </div>
