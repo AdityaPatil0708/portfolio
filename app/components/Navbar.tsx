@@ -26,7 +26,7 @@ export default function Navbar() {
           Projects
         </Link>
         <a
-          href="https://drive.google.com/file/d/1D5m4EAVzfqsryTBGXNtjE0IlUgaorZt7/view?usp=sharing"
+          href="https://drive.google.com/file/d/1fBfRPksjy2n3IKAqOdR8SKH-0ObQifUy/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#247d6e] transition-colors"

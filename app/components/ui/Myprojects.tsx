@@ -25,7 +25,7 @@ const projects: Project[] = [
     live: "https://apti-ace11.vercel.app",
   },
   {
-    title: "Finech (Saas landing page)",
+    title: "Finech (Landing page)",
     github: "https://github.com/AdityaPatil0708/finech.git",
     live: "https://finech-07.vercel.app",
   },
@@ -76,7 +76,7 @@ export function Myprojects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#247d6e] dark:hover:text-indigo-400 transition-colors hover:cursor-pointer"
+                  className="hover:text-[#247d6e] dark:hover:text-[#247d6e] transition-colors hover:cursor-pointer"
                 >
                   <GithubIcon />
                 </a>
@@ -86,7 +86,7 @@ export function Myprojects() {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl leading-none hover:text-[#247d6e] dark:hover:text-indigo-400 transition-colors hover:cursor-pointer"
+                  className="text-xl leading-none hover:text-[#247d6e] dark:hover:text-[#247d6e] transition-colors hover:cursor-pointer"
                 >
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg>
                 </a>

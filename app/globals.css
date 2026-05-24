@@ -40,3 +40,17 @@ body {
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
+@keyframes orb-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+.animate-orb-pulse {
+  animation: orb-pulse 5s ease-in-out infinite;
+}

@@ -41,15 +41,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-screen font-poppins ">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
           <div className="relative min-h-screen overflow-x-hidden transition-colors bg-white dark:bg-gray-950 text-[#4a4a4a] dark:text-zinc-300">
-            
-            {/* Glowing purple orb */}
+
+            {/* Glowing orb */}
             <div
               aria-hidden="true"
               className="pointer-events-none fixed inset-0 flex items-center justify-center"
             >
-              <div className="h-[200px] w-[550px] rounded-full  blur-[200px] dark:blur-[100px] dark:bg-[#247d6e]" />
+              <div className="h-[120px] w-[500px] rounded-full blur-[200px] dark:blur-[100px] dark:bg-[#6cdcc5] animate-orb-pulse" />
             </div>
 
             <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[600px] flex-col py-35">
