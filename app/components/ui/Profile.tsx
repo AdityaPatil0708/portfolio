@@ -29,7 +29,7 @@ export function Profile() {
   return (
     <div className="relative rounded-2xl px-10 py-10">
       {/* Top: avatar + skills */}
-      <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+      <div className="flex flex-col sm:flex-row gap-6 md:gap-8 items-center sm:items-start">
         {/* Left: avatar + name */}
         <div className="flex flex-col items-center gap-2 shrink-0 sm:pt-5">
           <img
