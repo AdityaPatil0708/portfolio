@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
     <div className="mx-10 mb-5">
-      <p className="text-xs md:text-sm text-[#4a4a4a] dark:text-zinc-300">
+      <p className="text-xs md:text-[13px] text-[#4a4a4a] dark:text-zinc-300">
         © {year} Aditya Patil
       </p>
     </div>

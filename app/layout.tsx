@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "next-themes";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-poppins",
+});
 
 export const metadata: Metadata = {
   title: "Aditya Patil",
@@ -20,7 +28,7 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="en"
-      className="h-full antialiased"
+      className={`${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-screen">
         <ThemeProvider
@@ -35,7 +43,7 @@ export default function RootLayout({
               aria-hidden="true"
               className="pointer-events-none fixed inset-0 flex items-center justify-center"
             >
-              <div className="h-30 w-125 rounded-full blur-[200px] dark:blur-[100px] dark:bg-[#6cdcc5] animate-orb-pulse" />
+              <div className="h-20 w-150 rounded-full blur-[200px] dark:blur-[100px] dark:bg-[#49f7d7] animate-orb-pulse" />
             </div>
 
             <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-150 flex-col py-35">

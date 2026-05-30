@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full flex items-center justify-between px-10 max-w-2xl mx-auto">
-      <div className="flex items-center gap-3 md:gap-6 text-[13px] md:text-[15px] font-medium text-[#4a4a4a] dark:text-zinc-300">
+      <div className="flex items-center gap-3 md:gap-6 text-[13px] md:text-[13px] font-medium text-[#4a4a4a] dark:text-zinc-300">
         <Link href="/" className="hover:text-[#247d6e]">
           Home
         </Link>
