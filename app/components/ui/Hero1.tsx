@@ -8,7 +8,7 @@ export default function Hero1() {
           Aditya Patil
         </h1>
 
-        <p className="text-gray-600 dark:text-zinc-300 leading-relaxed text-[12px] md:text-[14px]">
+        <p className="text-gray-600 dark:text-zinc-300 leading-relaxed text-[12px] md:text-[13.5px]">
           I&apos;m a{" "}
           <strong className="font-semibold text-[#4a4a4a] dark:text-zinc-300">
             Full Stack Developer &amp; DevOps Enthusiast
